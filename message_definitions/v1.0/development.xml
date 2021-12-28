@@ -223,15 +223,5 @@
       <field type="uint64_t" name="time_usec" units="us">Timestamp (UNIX Epoch time or time since system boot).
         The receiving end can infer timestamp format (since 1.1.1970 or since system boot) by checking for the magnitude of the number.</field>
     </message>
-    <message id="13000" name="ATMOSPHERIC_SENSOR">
-      <description>Atmospheric sensor data.</description>
-      <field type="uint16_t" name="sequence">Sequence number.</field>
-      <field type="float" name="temperature" units="cdegC">Temperature</field>
-      <field type="float" name="humidity" units="c%">Humidity</field>
-      <field type="float" name="press_abs" units="hPa">Absolute pressure</field>
-      <field type="float" name="direction" units="deg">Wind direction (that wind is coming from).</field>
-      <field type="float" name="speed" units="m/s">Wind speed in ground plane.</field>
-      <field type="float" name="speed_z" units="m/s">Vertical wind speed.</field>
-    </message>
   </messages>
 </mavlink>
